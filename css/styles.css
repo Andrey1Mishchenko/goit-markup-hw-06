@@ -169,12 +169,12 @@ h3 {
 
 .footer .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.links-container {
+/* .links-container {
     display: flex;
-}
+} */
 
 .footer .studio {
     color: var(--third-color);
@@ -226,14 +226,18 @@ h3 {
 }
 
 .social-list-container,
-.mailing-form {
+.mailing-container {
     padding-top: 72px;
 }
 
+.social-list-container {
+    margin-right: auto;
+}
+
 .social-list-title,
-.mailing-form-label {
+.mailing-form-title {
+    display: block;
     color: var(--third-color);
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
@@ -247,17 +251,13 @@ h3 {
     fill: var(--third-color);
 }
 
-.mailing-form-label {
-    display: block;
-}
-
-.mailing-form > div {
+.mailing-form {
     display: flex;
 }
 
 .mailing-form-input {
     background-color: transparent;
-    color: var(--footer-contact);
+    color: var(--third-color);
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -748,8 +748,7 @@ h3 {
 
 .modal-close:hover,
 .modal-close:focus {
-    background-color: var(--focus-color);
-    fill: var(--third-color);
+    fill: var(--focus-color);
 }
 
 .modal-close-icon {
